@@ -1,6 +1,12 @@
 
 module "tags" {
   source = "../../"
+
+  names = [
+    "prod",
+    "tags",
+    "sblack4"
+  ]
 }
 
 
