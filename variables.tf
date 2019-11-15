@@ -5,12 +5,6 @@ variable "tags" {
   description = "Additional tags. Overwrite module-generated tags"
 }
 
-variable "timestamp_format" {
-  type        = string
-  default     = "YYYY-MM-DD'T'hh:mm:ssZ"
-  description = "Timestamp format, see terraform.io/docs/configuration/functions/formatdate.html#specification-syntax"
-}
-
 variable "enforce_case" {
   type        = string
   default     = "None"
