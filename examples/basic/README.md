@@ -8,10 +8,12 @@ Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 Outputs:
 
 module_tags = {
-  "name" = "PROD-SBLACK4-TAGS"
+  "name" = "prod-tags-sblack4"
+  "name32" = "prod-tags-sblack4"
+  "name6" = "prod-t"
+  "namenosymbols" = "prodtagssblack4"
   "tags" = {
-    "Name" = "PROD-SBLACK4-TAGS"
-    "terraform_applied_at" = "2019-11-14T16:41:04Z"
+    "Name" = "prod-tags-sblack4"
     "terraform_managed" = true
     "terraform_module" = ".."
     "terraform_root_module" = "."
@@ -20,11 +22,7 @@ module_tags = {
   "tags_as_list_of_maps" = [
     {
       "key" = "Name"
-      "value" = "PROD-SBLACK4-TAGS"
-    },
-    {
-      "key" = "terraform_applied_at"
-      "value" = "2019-11-14T16:41:04Z"
+      "value" = "prod-tags-sblack4"
     },
     {
       "key" = "terraform_managed"
