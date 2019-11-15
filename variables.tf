@@ -18,7 +18,7 @@ variable "enforce_case" {
 }
 
 variable "names" {
-  type        = set(string)
+  type        = list(string)
   default     = ["default"]
   description = "Namespaces in ascending level of specificity, eg ['eus1', 'prod', 'kubernetes', 'marge']"
 }

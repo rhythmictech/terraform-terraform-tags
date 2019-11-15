@@ -10,7 +10,6 @@ locals {
     Name                  = local.name
     terraform_managed     = true
     terraform_workspace   = terraform.workspace
-    terraform_applied_at  = formatdate(var.timestamp_format, timestamp())
     terraform_root_module = basename(path.root)
     terraform_module      = basename(path.module)
   }
