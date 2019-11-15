@@ -6,10 +6,10 @@ locals {
   uncased_name = join(var.name_seperator, var.names)
   name = (
     local.enforce_uppercase ?
-      upper(local.uncased_name) :
-      local.enforce_lowercase ?
-        lower(local.uncased_name) :
-        local.uncased_name
+    upper(local.uncased_name) :
+    local.enforce_lowercase ?
+    lower(local.uncased_name) :
+    local.uncased_name
   )
 
   local_tags = {
