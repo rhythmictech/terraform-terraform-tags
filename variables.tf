@@ -20,7 +20,7 @@ variable "enforce_case" {
 variable "names" {
   type        = list(string)
   default     = ["default"]
-  description = "Namespaces in ascending level of specificity, eg ['eus1', 'prod', 'kubernetes', 'marge']"
+  description = "Namespaces in descending level of specificity, eg ['marge', 'kubernetes', 'prod', 'eus1']"
 }
 
 variable "name_seperator" {
