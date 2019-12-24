@@ -24,6 +24,16 @@ output "tags" {
   value       = local.tags
 }
 
+output "tags_no_name" {
+  description = "Tags as a map (excludes Name key)"
+  value = {
+    for key in keys(local.tags) :
+    key => local.tags[key]
+    if key != "Name"
+
+  }
+}
+
 output "tags_as_list_of_maps" {
   description = "Tags as a list of maps, to make things like tagging ECS simple"
   value       = local.tags_as_list_of_maps
