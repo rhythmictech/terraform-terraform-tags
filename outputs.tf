@@ -1,6 +1,6 @@
 
 output "name" {
-  description = ""
+  description = "Moniker to be applied to resources"
   value       = local.name
 }
 

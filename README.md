@@ -21,7 +21,7 @@ No provider.
 
 | Name | Description |
 |------|-------------|
-| name | n/a |
+| name | Moniker to be applied to resources |
 | name32 | first 32 chars of string name |
 | name6 | first 6 chars of string name |
 | namenosymbols | name with symbols removed |
