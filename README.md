@@ -1,7 +1,20 @@
 # terraform-terraform-tags
 [![](https://github.com/rhythmictech/terraform-terraform-tags/workflows/check/badge.svg)](https://github.com/rhythmictech/terraform-terraform-tags/actions)
 
-Tag the world
+A handy dandy module to ensure consistent tagging policies across your Terraform world.
+
+Example:
+
+```module "tags" {
+  source = "git::https://github.com/rhythmictech/terraform-terraform-tags.git"
+
+  tags = {
+    "Env"       = "prod",
+    "Namespace" = "frontend",
+    "Owner"     = "Frontend Engineering Team"
+  }
+}
+```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Providers
