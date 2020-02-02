@@ -20,7 +20,7 @@ output "namenosymbols" {
 }
 
 output "tags" {
-  description = "Tags as a map"
+  description = "Tags as a map (includes a `Name` tag)"
   value       = local.tags
 }
 
@@ -35,6 +35,6 @@ output "tags_no_name" {
 }
 
 output "tags_as_list_of_maps" {
-  description = "Tags as a list of maps, to make things like tagging ECS simple"
+  description = "Tags as a list of maps, to make things like tagging ECS simple (includes a `Name` tag)"
   value       = local.tags_as_list_of_maps
 }
