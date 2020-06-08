@@ -5,9 +5,13 @@ A handy dandy module to ensure consistent tagging policies across your Terraform
 
 Example:
 
-```module "tags" {
-  source = "git::https://github.com/rhythmictech/terraform-terraform-tags.git"
-
+```hcl
+module "tags" {
+  source  = "rhythmictech/tags/terraform"
+  version = "1.0.0"
+  
+  names = ["example", "prod", "frontend"]
+  
   tags = {
     "Env"       = "prod",
     "Namespace" = "frontend",
