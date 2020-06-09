@@ -1,5 +1,5 @@
 # terraform-terraform-tags
-[![](https://github.com/rhythmictech/terraform-terraform-tags/workflows/check/badge.svg)](https://github.com/rhythmictech/terraform-terraform-tags/actions)
+[![](https://github.com/rhythmictech/terraform-terraform-tags/workflows/pre-commit-check/badge.svg)](https://github.com/rhythmictech/terraform-terraform-tags/actions)  <a href="https://twitter.com/intent/follow?screen_name=RhythmicTech"><img src="https://img.shields.io/twitter/follow/RhythmicTech?style=social&logo=RhythmicTech" alt="follow on Twitter"></a>
 
 A handy dandy module to ensure consistent tagging policies across your Terraform world.
 
@@ -25,7 +25,7 @@ module "tags" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
+| terraform | >= 0.12.19 |
 
 ## Providers
 
