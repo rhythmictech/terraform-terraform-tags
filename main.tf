@@ -13,11 +13,9 @@ locals {
   )
 
   local_tags = {
-    Name                  = local.name
-    terraform_managed     = true
-    terraform_workspace   = terraform.workspace
-    terraform_root_module = basename(path.root)
-    terraform_module      = basename(path.module)
+    Name                = local.name
+    terraform_managed   = true
+    terraform_workspace = terraform.workspace
   }
 
   tags = merge(
