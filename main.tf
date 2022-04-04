@@ -19,8 +19,8 @@ locals {
   }
 
   tags = merge(
-    var.tags,
-    local.local_tags
+    local.local_tags,
+    var.tags
   )
 
   tags_as_list_of_maps = flatten([
